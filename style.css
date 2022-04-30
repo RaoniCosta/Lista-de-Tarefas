@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: rgb(138, 138, 238);
+    
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+    align-self: center;
+    
+}
+
+.conteiner-filho {
+    display: flex;
+    background-color: rgb(138, 178, 238);
+    align-items: center;
+    flex-direction: column;
+    border: solid black 1px;
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 100px;
+    color: brown;
+
+}
+
+#input-text {
+    border-radius: 10px;
+    outline: none;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+    width: 280px;
+    height: 30px;
+}
+
+#lista {
+    color: white;
+    background-color: black;
+    width: 280px;
+    height: 250px;
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista-tarefas {
+    color: white;
+    width: 280px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.classLista {
+    width: 200px;
+    list-style: none;
+    margin-top: 8px;
+}
+
+.selected {
+    background-color: rgb(128, 128, 128);
+}
+
+.completed {
+    text-decoration: line-through solid rgba(0, 0, 0);
+    color: aqua;
+  }
+
+.bottons {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: row;
+    margin:  7px;
+    
+}
+
+.Adicionar {
+    height: 30px;
+    width: 70px;
+    margin-right: 3px;
+}
+
+
+.Remover {
+    height: 30px;
+    width: 70px;
+    margin-right: 3px;
+}
+
+
+.Editar {
+    height: 30px;
+    width: 70px;
+    margin-right: 3px;
+}
+
+
+.Sair {
+    height: 30px;
+    width: 70px;
+    margin-right: 3px;
+}
+
+
