@@ -1,63 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --main-blue: #1572A1;
+    --main-green: #68EACC;
+    --main-grey: #f2f2f2;
+    --main-red: #e74c3c;
+    --main-white: #fff;
+    --sub-blue: #86C6F4;
+    --sub-grey: #ccc;
+  }
+
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    background-color: rgb(138, 138, 238);
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(13, 40, 77, 0.72) 0%, rgba(233, 216, 216, 0.45) 100%);
+    backdrop-filter: saturate(3);
     
 }
 
 .conteiner {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
-    width: 100vh;
     align-self: center;
     
 }
 
 .conteiner-filho {
-    display: flex;
-    background-color: rgb(138, 178, 238);
-    align-items: center;
-    flex-direction: column;
-    border: solid black 1px;
-    height: 500px;
-    width: 400px;
-    border-radius: 15px;
+    justify-content: center;
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+    opacity: 0.8;
+    padding: 50px;
 }
 
 header h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 700;
     font-size: 30px;
-    margin-bottom: 100px;
-    color: brown;
+    font-weight: 600;
 
 }
 
 #input-text {
-    border-radius: 10px;
-    outline: none;
-    border: solid 1px black;
-    background-color: black;
-    color: white;
-    width: 280px;
-    height: 30px;
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
 }
 
+input{
+    width: 85%;
+  height: 100%;
+  border: 1px solid var(--sub-grey);
+  font-size: 17px;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+
 #lista {
+    
     color: white;
-    background-color: black;
-    width: 280px;
+    background-color: rgba(3, 58, 95, 0.836);
     height: 250px;
     margin-top: 30px;
     border-radius: 15px;
@@ -68,13 +85,18 @@ header h1 {
 
 #lista-tarefas {
     color: white;
-    width: 280px;
-    height: 250px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+  
+ li:hover {
+   background-color: rgba(87, 246, 252, 0.568)
+  }
+  
 
 .classLista {
     width: 200px;
@@ -101,30 +123,64 @@ header h1 {
 }
 
 .Adicionar {
-    height: 30px;
-    width: 70px;
-    margin-right: 3px;
+    width: 100px;
+    margin: 5px;
+    font-size: 16px;
+    padding: 8px 10px;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: var(--main-blue);
+    color: var(--main-white);
+    cursor: pointer;
 }
 
 
 .Remover {
-    height: 30px;
-    width: 70px;
-    margin-right: 3px;
+    width: 100px;
+    margin: 5px;
+    font-size: 16px;
+    padding: 8px 10px;
+  height: 100%;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: var(--main-blue);
+  color: var(--main-white);
+  cursor: pointer;
 }
 
 
 .Editar {
-    height: 30px;
-    width: 70px;
-    margin-right: 3px;
+    width: 100px;
+    margin: 5px;
+    font-size: 16px;
+    padding: 8px 10px;
+    font-size: 16px;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: var(--main-blue);
+    color: var(--main-white);
+    cursor: pointer;
 }
 
 
 .Sair {
-    height: 30px;
-    width: 70px;
-    margin-right: 3px;
+  width: 100px;
+  margin: 5px;
+  font-size: 16px;
+  padding: 8px 10px;
+  height: 100%;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: var(--main-blue);
+  color: var(--main-white);
+  cursor: pointer;
 }
+
 
 

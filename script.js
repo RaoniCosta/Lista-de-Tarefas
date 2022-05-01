@@ -87,3 +87,4 @@ sairBtn.addEventListener("click", function onClick(e) {
     destruction.innerHTML = 'Boa-sorte. Volte logo', destruction.style.fontSize = '40px';
     
 });
+
